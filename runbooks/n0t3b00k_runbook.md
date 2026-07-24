@@ -8,12 +8,15 @@ Este runbook debe utilizarse en las siguientes situaciones:
 - Necesitas investigar errores que se están registrando en el servicio.
 
 ## 2. Estado Conocido como Bueno (Known Good State)
-El estado conocido y funcional está documentado en los archivos comprimidos dentro de la carpeta `backups/`.
-- **Ruta de backups**: `/home/blob/dev/active projects/enowars-service-example/service/backups/`
-- Antes de aplicar cualquier modificación manual, se debe correr `./crear_backup.sh` para resguardar el estado actual.
+El estado conocido y funcional está documentado en los archivos comprimidos dentro de la carpeta `backups/` del servicio.
+- **Ruta de backups**: `../services/n0t3b00k/backups/` (relativo a la carpeta runbooks).
+- Antes de aplicar cualquier modificación manual, se debe correr el script de backup (`../scripts/n0t3b00k_backup.sh`) para resguardar el estado actual.
 
 ## 3. Evidencia y Logs
-Para diagnosticar qué está fallando o capturar evidencia, ejecuta estos comandos desde la carpeta del servicio (`cd "/home/blob/dev/active projects/enowars-service-example/service"`):
+Para diagnosticar qué está fallando o capturar evidencia, ejecuta estos comandos desde la carpeta del servicio:
+```bash
+cd ../services/n0t3b00k
+```
 
 > [!NOTE]
 > Captura la salida de estos comandos si necesitas reportar el error o pedir ayuda (nivel D0).
@@ -48,13 +51,13 @@ python3 ../scripts/n0t3b00k_test.py
 
 **Opción A: El contenedor se detuvo o colgó (Recuperación simple)**
 ```bash
-cd "/home/blob/dev/active projects/enowars-service-example/service"
+cd ../services/n0t3b00k
 docker-compose restart n0t3b00k
 ```
 
 **Opción B: Se modificó la configuración (Rebuild)**
 ```bash
-cd "/home/blob/dev/active projects/enowars-service-example/service"
+cd ../services/n0t3b00k
 docker-compose up --build -d
 ```
 
@@ -67,7 +70,7 @@ Si el servicio fue vulnerado de forma irremediable, o metiste un parche (patch) 
 
 1. **Localiza el último backup bueno:**
    ```bash
-   cd "/home/blob/dev/active projects/enowars-service-example/service"
+   cd ../services/n0t3b00k
    ls -lah backups/
    ```
 2. **Apaga el servicio:**

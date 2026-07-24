@@ -2,7 +2,7 @@
 
 # Script de respaldo para n0t3b00k
 
-cd "/home/blob/dev/active projects/enowars-service-example/service" || exit
+cd "$(dirname "$0")/../services/n0t3b00k" || exit
 
 echo "[+] Creando directorio de respaldos si no existe..."
 mkdir -p backups
