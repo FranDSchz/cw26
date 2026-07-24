@@ -40,7 +40,7 @@ nc localhost 2323
 **Test Automático (Script Python):**
 Puedes utilizar el script que comprueba todos los endpoints (`reg`, `log`, `set`, `list`).
 ```bash
-python3 /tmp/test_service.py
+python3 ../scripts/n0t3b00k_test.py
 ```
 *(Asegúrate de que este script exista o guárdalo permanentemente en el entorno).*
 
