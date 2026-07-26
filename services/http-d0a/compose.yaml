@@ -1,0 +1,10 @@
+services:
+  web:
+    image: nginx:alpine
+    container_name: cw26-http-d0a
+    ports:
+      - "8080:80"
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
+      - ./config:/etc/nginx/conf.d:ro
+    restart: unless-stopped
