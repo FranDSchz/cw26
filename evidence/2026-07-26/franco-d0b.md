@@ -577,6 +577,9 @@ No se repite D0-B completo. Las correcciones se integran mediante flashcards sel
 
 - Rama activa: `lab/franco-d0b-network-observation`.
 - Base: `0078b5a`.
+- Commit principal D0-B: `8f2b957`.
+- Rama publicada en `origin`.
+- Pull request: `#4`, abierto como draft contra `main`.
 - Docker Desktop: `4.81.0`.
 - Docker Engine: `29.6.1`.
 - Servicio `cw26-http-d0a`: `Up`.
@@ -601,9 +604,8 @@ Durante el cierre Docker Desktop estaba inicialmente apagado, por lo que desapar
 
 ## Pendientes y dependencias
 
-- Incorporar forzadamente las PCAP requeridas sin modificar `.gitignore`.
-- Actualizar Tareas, Registro diario y Habilidades en el Excel operativo.
-- Commit, push y PR D0-B.
+- Revisar y fusionar el draft PR #4.
+- Confirmar que el Excel operativo conserva la actualización D0-B.
 - Philippe y Mati deben completar el núcleo de D0-A.
 - Otro integrante debe ejecutar el runbook de forma cruzada.
 - D0-C grupal requiere tres roles rotados; un dry-run individual no aprueba el gate grupal.

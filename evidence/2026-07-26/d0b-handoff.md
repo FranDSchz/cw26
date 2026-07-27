@@ -13,7 +13,8 @@ El PDF sigue vigente. No solicitar automáticamente otro plan.
 - Repositorio: `~/cyberwar/cw26`
 - Rama de trabajo cerrada: `lab/franco-d0b-network-observation`
 - Rama de inicio del próximo módulo: `main`, actualizada después de revisar/fusionar el PR D0-B.
-- PR D0-B: **PENDIENTE DE COMPLETAR EN ESTE CIERRE**.
+- Commit principal D0-B: `8f2b957`.
+- PR D0-B: [#4](https://github.com/FranDSchz/cw26/pull/4), abierto como draft contra `main`.
 - D0-A: nivel 3/4.
 - D0-B: **PASS CON CORRECCIONES, nivel 3/4**.
 - Replanificación necesaria: **NO**.
